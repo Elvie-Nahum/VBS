@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore premium products at V Bloom Shop. Responsive design ensures the best browsing experience on all devices.">
+    <meta name="keywords" content="V Bloom, shop, products, responsive design">
+    <title>V Bloom Shop | Products</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        /* Header */
+        header {
+            background: #379470;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+        .back-home {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            color: #379470;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        .back-home:hover {
+            background: #ddd;
+        }
+
+        /* Product Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px 0;
+        }
+        .product {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product h3 {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+        .product p {
+            font-size: 1rem;
+            color: #777;
+            margin: 0 0 15px;
+        }
+        .product button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+        .product button:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background: #297e5d;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design - Smaller devices */
+        @media (max-width: 767px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            .product img {
+                height: 150px;  /* Smaller images on mobile */
+            }
+            .product h3 {
+                font-size: 1rem;
+            }
+            .product p {
+                font-size: 0.9rem;
+            }
+            .back-home {
+                font-size: 0.8rem;
+            }
+            .product button {
+                width: 100%; /* Full-width button on small screens */
+                padding: 12px; /* Larger button on mobile */
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Responsive Design - Tablet to Desktop */
+        @media (min-width: 768px) and (max-width: 1199px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .product h3 {
+                font-size: 1.2rem;
+            }
+            .product button {
+                width: 80%; /* Slightly smaller button on tablets */
+                font-size: 1rem;
+            }
+        }
+
+        /* Desktop View */
+        @media (min-width: 1200px) {
+            .products {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+            }
+            .product h3 {
+                font-size: 1.4rem;
+            }
+            .product button {
+                width: auto; /* Normal button size on desktop */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>V Bloom Shop - Products</h1>
+            <!-- Back to Home Button -->
+            <button class="back-home" onclick="window.location.href='index.html';">← Back to Home</button>
+        </div>
+    </header>
+
+    <!-- Product Grid -->
+    <div class="container">
+        <div class="products">
+            <!-- Product Item -->
+            <div class="product">
+                <img src="images/Flower Basket 2.jpg" alt="Product 1">
+                <h3>Yellow Aesthetic Flower</h3>
+                <p>$100</p>
+                <p>A vibrant and cheerful yellow flower arrangement, perfect for adding a pop of color to any room or event.</p>
+                <button onclick="showDetails('Yellow Aesthetic Flower', 'images/Flower Basket 2.jpg', '$29.99', 'A beautiful yellow flower arrangement perfect for any occasion.')">Buy</button>
+            </div>
+            <!-- Product Item -->
+            <div class="product">
+                <img src="images/sunflower.jpg" alt="Product 2">
+                <h3>Sunflower</h3>
+                <p>$99</p>
+                <p>Bright and sunny, this iconic flower is an ideal gift to spread warmth and happiness, perfect for any occasion.
+                </p>
+                <button onclick="showDetails('Sunflower', 'images/sunflower.jpg', '$39.99', 'Bright and sunny, perfect for gifting.')">Buy</button>
+            </div>
+            <!-- Product Item -->
+            <div class="product">
+                <img src="images/Wedding Bouquet 2.jpg" alt="Product 3">
+                <h3>White Roses</h3>
+                <p>$180</p>
+                <p>Elegant and timeless, these white roses symbolize purity and love, making them perfect for weddings or anniversaries.
+                </p>
+                <button onclick="showDetails('White Roses', 'images/Wedding Bouquet 2.jpg', '$19.99', 'Elegant white roses ideal for weddings or anniversaries.')">Buy</button>
+            </div>
+            <!-- Product Item -->
+            <div class="product">
+                <img src="images/for unniversary.jpg" alt="Product 4">
+                <h3>Roses</h3>
+                <p>$120</p>
+                <p>A classic bouquet of beautifully arranged roses, ideal for expressing love and affection for any special occasion.</p>
+                <button onclick="showDetails('Roses', 'images/for unniversary.jpg', '$49.99', 'A beautiful rose bouquet for every occasion.')">Buy</button>
+            </div>
+            <!-- Product Item -->
+            <div class="product">
+                <img src="images/Lilies.jpg" alt="Product 5">
+                <h3>Lilies</h3>
+                <p>$85</p>
+                <p>Graceful and sophisticated, lilies bring elegance to any space, making them perfect for both decorative and symbolic purposes.</p>
+                <button onclick="showDetails('Lilies', 'images/Lilies.jpg', '$25.99', 'Elegant lilies that add sophistication to any room.')">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> V Bloom Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="" class="img-fluid">
+                    <p id="modalPrice"></p>
+                    <p id="modalDescription"></p

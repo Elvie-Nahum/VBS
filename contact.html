@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact V Bloom Shop for inquiries, support, or feedback. We value your communication.">
+    <meta name="keywords" content="V Bloom, contact, flowers, support, inquiries">
+    <title>Contact Us | V Bloom Shop</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        /* Header */
+        header {
+            background: #379470;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .contact-form h2 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form button {
+            background: #379470;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #297e5d;
+        }
+
+        /* Footer */
+        footer {
+            background: #297e5d;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Social Links */
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #379470;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 767px) {
+            .contact-form {
+                padding: 20px;
+            }
+
+            .contact-form h2 {
+                font-size: 1.4rem;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                font-size: 0.9rem;
+            }
+
+            .contact-form button {
+                font-size: 1.1rem;
+            }
+
+            footer p {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .contact-form {
+                padding: 25px;
+            }
+
+            .contact-form h2 {
+                font-size: 1.5rem;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Contact V Bloom Shop</h1>
+        </div>
+    </header>
+
+    <!-- Contact Form -->
+    <div class="container">
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="POST">
+                <!-- Name -->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <!-- Email -->
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+                <!-- Message -->
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Type your message"></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+        <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> V Bloom Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome Icons (for social links) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
